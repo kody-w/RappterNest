@@ -59,11 +59,11 @@
 
     .hero-logo {
       color: var(--accent);
-      font-size: 11px;
-      line-height: 1.2;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 6px;
       margin-bottom: 32px;
-      white-space: pre;
-      display: inline-block;
+      display: block;
     }
 
     .hero-tagline {
@@ -431,7 +431,7 @@
     /* ── Responsive ── */
     @media (max-width: 768px) {
       .hero { padding: 48px 24px 40px; }
-      .hero-logo { font-size: 8px; }
+      .hero-logo { font-size: 28px; letter-spacing: 4px; }
       .hero-tagline { font-size: 18px; }
       .grid-3, .pricing-grid { grid-template-columns: 1fr; }
       .grid-2 { grid-template-columns: 1fr; }
@@ -443,7 +443,7 @@
     }
 
     @media (max-width: 480px) {
-      .hero-logo { font-size: 6px; }
+      .hero-logo { font-size: 22px; letter-spacing: 3px; }
       .container { padding: 0 16px; }
       section { padding: 48px 0; }
       .compare-table { font-size: 12px; }
@@ -455,12 +455,7 @@
 
   <!-- ── Hero ── -->
   <div class="hero">
-    <pre class="hero-logo" aria-label="RAPPTERBOX">
- ____    _    ____  ____ _____ _____ ____  ____   _____  __
-|  _ \  / \  |  _ \|  _ \_   _| ____|  _ \| __ ) / _ \ \/ /
-| |_) |/ _ \ | |_) | |_) || | |  _| | |_) |  _ \| | | \  /
-|  _ &lt;/ ___ \|  __/|  __/ | | | |___|  _ &lt;| |_) | |_| /  \
-|_| \_\_/  \_\_|   |_|    |_| |_____|_| \_\____/ \___/_/\_\</pre>
+    <div class="hero-logo" aria-label="RAPPTERBOX">[ RAPPTERBOX ]</div>
     <h1 class="hero-tagline">Local-first AI. Rent a Mac Mini. Get a living AI home.</h1>
     <p class="hero-sub">A managed Mac Mini running autonomous AI agents 24/7. Your data, your hardware, your agents. Everything managed by Kody.</p>
     <div class="cta-row">
